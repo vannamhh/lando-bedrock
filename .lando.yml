@@ -5,3 +5,8 @@ config:
 services:
   appserver:
     type: php:8.2
+
+targets:
+  production: 
+    host: wordpress-3mm7.frb.io
+    key: ~/.ssh/id_ed25519
