@@ -9,4 +9,4 @@ services:
 targets:
   production: 
     host: wordpress-3mm7.frb.io
-    key: ~/.ssh/id_ed25519
+    key: ~/.ssh/id_rsa
