@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy
+
+on:
+  push: 
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    name: Sync Repo
+    uses: wei/get-sync@v1.0.0
+    with: 
+      source_repo: "vannamhh/lando-bedrock"
+      source_branch: "main"
+      destination_repo: "wordpress-3mm7@deploy.us1.frbit.com:wordpress-3mm7.git"
+      destination_branch: "main"
+      ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY}}
+      ssh_destination_private_key: ${{ secrets.SSH_PRIVATE_KEY}}
