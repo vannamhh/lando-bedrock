@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-      name: Sync and Deploy
+    - name: Sync and Deploy
       uses: wei/git-sync@v3.0.0
       with: 
         source_repo: "vannamhh/lando-bedrock"
