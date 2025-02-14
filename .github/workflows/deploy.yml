@@ -20,4 +20,5 @@ jobs:
         source_branch: "main"
         destination_repo: "wordpress-3mm7@deploy.us1.frbit.com:wordpress-3mm7.git"
         destination_branch: "main"
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY}}
+        ssh_private_key: ${{ secrets.SSH_SECRET_KEY}}
+        destination_ssh_private_key: ${{ secrets.SSH_SECRET_KEY }}
