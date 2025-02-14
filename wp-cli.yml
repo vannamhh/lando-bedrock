@@ -1,3 +1,14 @@
 path: web/wp
+
+"@development": 
+  path: web/wp
+
+"@production":
+  ssh: wordpress-3mm7@deploy.us1.frbit.com
+
 server:
   docroot: web
+
+
+
+  
